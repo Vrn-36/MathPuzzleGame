@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="equal_sign">=</string>
+    <string name="two">2</string>
+    <string name="underscore">_</string>
+</resources>
