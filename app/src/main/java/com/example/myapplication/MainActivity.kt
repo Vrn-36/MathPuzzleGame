@@ -130,65 +130,67 @@ class MainActivity : AppCompatActivity() {
         }
         for (optionButton in options) {
             optionButton.setOnClickListener{ view ->
-                when (view.id) {
-                    R.id.option1 -> {
-                        option1.setBackgroundColor(Color.GRAY)
-                        optionSelected = option1
-                        //idOfOptionSelected = option1.id.toString()
-                    }
-                    R.id.option2 -> {
-                        option2.setBackgroundColor(Color.GRAY)
-                        optionSelected = option2
-                        //optionSelected = option2.text.toString()
-                        //idOfOptionSelected = option2.id.toString()
-                    }
-                    R.id.option3 -> {
-                        option3.setBackgroundColor(Color.GRAY)
-                        optionSelected = option3
-                        //optionSelected = option3.text.toString()
-                        //idOfOptionSelected = option3.id.toString()
-                    }
-                    R.id.option4 -> {
-                        option4.setBackgroundColor(Color.GRAY)
-                        optionSelected = option4
-                        //optionSelected = option4.text.toString()
-                        //idOfOptionSelected = option4.id.toString()
-                    }
-                    R.id.option5 -> {
-                        option5.setBackgroundColor(Color.GRAY)
-                        optionSelected = option5
-                        //optionSelected = option5.text.toString()
-                        //idOfOptionSelected = option5.id.toString()
-                    }
-                    R.id.option6 -> {
-                        option6.setBackgroundColor(Color.GRAY)
-                        optionSelected = option6
-                        //optionSelected = option6.text.toString()
-                        //idOfOptionSelected = option6.id.toString()
-                    }
-                    R.id.option7 -> {
-                        option7.setBackgroundColor(Color.GRAY)
-                        optionSelected = option7
-                        //optionSelected = option7.text.toString()
-                        //idOfOptionSelected = option7.id.toString()
-                    }
-                    R.id.option8 -> {
-                        option8.setBackgroundColor(Color.GRAY)
-                        optionSelected = option8
-                        //optionSelected = option8.text.toString()
-                        //idOfOptionSelected = option8.id.toString()
-                    }
-                    R.id.option9 -> {
-                        option9.setBackgroundColor(Color.GRAY)
-                        optionSelected = option9
-                        //optionSelected = option9.text.toString()
-                        //idOfOptionSelected = option9.id.toString()
-                    }
-                    R.id.option10 -> {
-                        option10.setBackgroundColor(Color.GRAY)
-                        optionSelected = option10
-                        //optionSelected = option10.text.toString()
-                        //idOfOptionSelected = option10.id.toString()
+                if (optionSelected == null)
+                    when (view.id) {
+                        R.id.option1 -> {
+                            option1.setBackgroundColor(Color.GRAY)
+                            optionSelected = option1
+                            //idOfOptionSelected = option1.id.toString()
+                        }
+                        R.id.option2 -> {
+                            option2.setBackgroundColor(Color.GRAY)
+                            optionSelected = option2
+                            //optionSelected = option2.text.toString()
+                            //idOfOptionSelected = option2.id.toString()
+                        }
+                        R.id.option3 -> {
+                            option3.setBackgroundColor(Color.GRAY)
+                            optionSelected = option3
+                            //optionSelected = option3.text.toString()
+                            //idOfOptionSelected = option3.id.toString()
+                        }
+                        R.id.option4 -> {
+                            option4.setBackgroundColor(Color.GRAY)
+                            optionSelected = option4
+                            //optionSelected = option4.text.toString()
+                            //idOfOptionSelected = option4.id.toString()
+                        }
+                        R.id.option5 -> {
+                            option5.setBackgroundColor(Color.GRAY)
+                            optionSelected = option5
+                            //optionSelected = option5.text.toString()
+                            //idOfOptionSelected = option5.id.toString()
+                        }
+                        R.id.option6 -> {
+                            option6.setBackgroundColor(Color.GRAY)
+                            optionSelected = option6
+                            //optionSelected = option6.text.toString()
+                            //idOfOptionSelected = option6.id.toString()
+                        }
+                        R.id.option7 -> {
+                            option7.setBackgroundColor(Color.GRAY)
+                            optionSelected = option7
+                            //optionSelected = option7.text.toString()
+                            //idOfOptionSelected = option7.id.toString()
+                        }
+                        R.id.option8 -> {
+                            option8.setBackgroundColor(Color.GRAY)
+                            optionSelected = option8
+                            //optionSelected = option8.text.toString()
+                            //idOfOptionSelected = option8.id.toString()
+                        }
+                        R.id.option9 -> {
+                            option9.setBackgroundColor(Color.GRAY)
+                            optionSelected = option9
+                            //optionSelected = option9.text.toString()
+                            //idOfOptionSelected = option9.id.toString()
+                        }
+                        R.id.option10 -> {
+                            option10.setBackgroundColor(Color.GRAY)
+                            optionSelected = option10
+                            //optionSelected = option10.text.toString()
+                            //idOfOptionSelected = option10.id.toString()
+                        }
                     }
                 }
             }
@@ -203,6 +205,7 @@ class MainActivity : AppCompatActivity() {
                     optionSelected?.isEnabled = false
                     blank.isEnabled = false
                     emptyBlanks -= 1
+                    optionSelected = null
                 }
             }
         }
